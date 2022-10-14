@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:open_file/open_filex.dart';
 
 void main() => runApp(MyApp());

@@ -101,10 +101,10 @@ public class OpenFilePlugin implements MethodCallHandler
                     if(!isFileAvailable()){
                         return;
                     }
-                    if (!isMediaStorePath()&&!Environment.isExternalStorageManager()) {
-                        result(-3, "Permission denied: android.Manifest.permission.MANAGE_EXTERNAL_STORAGE");
-                        return;
-                    }
+//                    if (!isMediaStorePath()&&!Environment.isExternalStorageManager()) {
+//                        result(-3, "Permission denied: android.Manifest.permission.MANAGE_EXTERNAL_STORAGE");
+//                        return;
+//                    }
                 }
                 if (hasPermission(Manifest.permission.READ_EXTERNAL_STORAGE)) {
                     if (TYPE_STRING_APK.equals(typeString)) {
@@ -127,7 +127,6 @@ public class OpenFilePlugin implements MethodCallHandler
     private boolean isMediaStorePath(){
         boolean isMediaStorePath = false;
         String[] mediaStorePath = {"/DCIM/"
-                ,"/Android/"
                 ,"/Pictures/"
                 ,"/Movies/"
                 ,"/Alarms/"
