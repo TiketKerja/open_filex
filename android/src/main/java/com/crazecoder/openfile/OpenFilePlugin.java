@@ -127,6 +127,7 @@ public class OpenFilePlugin implements MethodCallHandler
     private boolean isMediaStorePath(){
         boolean isMediaStorePath = false;
         String[] mediaStorePath = {"/DCIM/"
+                ,"/Android/"
                 ,"/Pictures/"
                 ,"/Movies/"
                 ,"/Alarms/"
